@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    position: relative;
+    background-image: url(Christmas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.Main {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-size: 20vw;
+    font-family: "Brush Script MT", cursive;
+    line-height: 0.9;
+    background-image: linear-gradient(45deg, #68faa0, #008154);
+    color: transparent;
+    background-clip: text;
+    z-index: 100;
+}
+
+.Santa1,
+.Santa2,
+.Santa3{
+    position: absolute;
+    height: 20vw;
+    max-height: 200px;
+    transform: rotate(330deg);
+    bottom: -20vh;
+    left: -30vw;
+    animation: move 30s linear infinite;
+}
+
+.Santa1{
+    animation-delay: 30s;
+}
+
+.Santa2{
+    animation-delay: 10s;
+}
+
+.Santa3{
+    animation-delay: 20s;
+}
+
+@keyframes move {
+    0% {
+        bottom: -20vh;
+        left: -30vw;
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(-25deg);
+    }
+    100% {
+        bottom: 100vh;
+        left: 100vw;
+        transform: rotate(-25deg);
+    }
+}
+
+.music1{
+    position: absolute;
+    opacity: 1;
+    left: -30vw;
+}
